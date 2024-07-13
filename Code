@@ -1,0 +1,13 @@
+javascript:(function() {
+    var element = document.querySelector('[data-loyalty_webapi_token]');
+    if (element) {
+        var token = element.getAttribute('data-loyalty_webapi_token');
+        navigator.clipboard.writeText(token).then(function() {
+            alert('Token copied to clipboard: ' + token);
+        }).catch(function(err) {
+            alert('Failed to copy token: ' + err);
+        });
+    } else {
+        alert('Element with data-loyalty_webapi_token not found.');
+    }
+})();
