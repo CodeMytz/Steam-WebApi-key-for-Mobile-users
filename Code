@@ -3,7 +3,7 @@ javascript:(function() {
     if (element) {
         var token = element.getAttribute('data-loyalty_webapi_token').replace(/^['"]|['"]$/g, '');
         navigator.clipboard.writeText(token).then(function() {
-            alert('Token is copied. Support me by using code MYTZ on csgoroll ;) ' + token);
+            alert('Support me by using code MYTZ on csgoroll ;) ' + token);
         }).catch(function(err) {
             alert('Failed to copy token: ' + err);
         });
