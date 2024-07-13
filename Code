@@ -3,11 +3,11 @@ javascript:(function() {
     if (element) {
         var token = element.getAttribute('data-loyalty_webapi_token');
         navigator.clipboard.writeText(token).then(function() {
-            alert('Token copied to clipboard: ' + token);
+            alert('Token copied to clipboard, support me by using code MYTZ on csgoroll ;): ' + token);
         }).catch(function(err) {
             alert('Failed to copy token: ' + err);
         });
     } else {
-        alert('Element with data-loyalty_webapi_token not found.');
+        alert('data-loyalty_webapi_token not found. Make sure your in edit profile page :)');
     }
 })();
